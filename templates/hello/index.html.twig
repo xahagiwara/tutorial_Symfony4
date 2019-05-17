@@ -9,12 +9,13 @@
 </style>
 
 <div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+    <h1>Hello Symfony World</h1>
+
+    <table>
+        <li>name    : {{ resouce.name }}</li>
+        <li>id      : {{ resouce.id }}</li>
+    </table>
 
     This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'C:/Users/shion/Desktop/tutorial_symfony4/src/Controller/HelloController.php'|file_link(0) }}">src/Controller/HelloController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/Users/shion/Desktop/tutorial_symfony4/templates/hello/index.html.twig'|file_link(0) }}">templates/hello/index.html.twig</a></code></li>
-    </ul>
 </div>
 {% endblock %}

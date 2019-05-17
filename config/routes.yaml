@@ -3,5 +3,5 @@
 #    controller: App\Controller\DefaultController::index
 
 hello:
-  path: /hello
+  path: /hello/{name}/{id}
   controller: App\Controller\HelloController::index
