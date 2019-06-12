@@ -1,4 +1,14 @@
-{{ form_start(form) }}
-    {{ form_widget(form) }}
+{{ form_start(form, { attr: {novalidate: 'novalidate'} }) }}
+
+<div>
+    {{ form_label(form.name) }}
+    {{ form_widget(form.name, {'after': {'class': 'foo'}}) }}
+</div>
+{{ form_errors(form.name) }}
+
+{{ form_label(form.price) }}
+{{ form_widget(form.price) }}
+{{ form_errors(form.price) }}
+
     <button class="btn">{{ button_label|default('Save') }}</button>
 {{ form_end(form) }}

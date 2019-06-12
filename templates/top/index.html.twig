@@ -32,18 +32,8 @@
     <h1>Hello {{ controller_name }}! ✅</h1>
 
     <ul>
-        <li>Your controller at
-            <code>
-                <a href="{{ 'C:/Users/shion/Desktop/tutorial_Symfony4/src/Controller/TopController.php'|file_link(0) }}">src/Controller/TopController.php</a>
-            </code>
-        </li>
-        <li>Your template at
-            <code>
-                <a href="{{ 'C:/Users/shion/Desktop/tutorial_Symfony4/templates/top/index.html.twig'|file_link(0) }}">templates/top/index.html.twig
-                </a>
-            </code>
-        </li>
         <li><a href="{{ path(next_url, {'name' : 'a', 'id': '10'}) }}">Hello Page</a> </li>
+        <li><a href="{{ path("test_entity_index") }}">Test Entity Page</a> </li>
     </ul>
 </div>
 {% endblock %}

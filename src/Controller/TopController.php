@@ -19,8 +19,8 @@ class TopController extends AbstractController
         $factory = new MenuFactory();
         $menu = $factory->createItem('My menu');
         $menu->addChild('Home', array('uri' => '/'));
-        $menu->addChild('Comments', array('uri' => '#comments'));
-        $menu->addChild('Symfony', array('uri' => 'http://symfony.com/'));
+        $menu->addChild('Entyti Test Page', array('uri' => 'testentity/'));
+        $menu->addChild('Symfony Document', array('uri' => 'http://symfony.com/'));
 
         $renderer = new ListRenderer(new Matcher());
 
