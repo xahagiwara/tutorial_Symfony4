@@ -1,0 +1,4 @@
+src/Entity/TestEntity:
+  testEntity1:
+    name: 'aaa'
+    price: 100

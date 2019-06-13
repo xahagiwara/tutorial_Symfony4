@@ -3,7 +3,6 @@
 /.idea
 
 # Composer PHAR
-/composer.phar
 /composer.lock
 /symfony.lock
 
